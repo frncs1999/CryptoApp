@@ -8,6 +8,7 @@
    2. cd CryptoApp<br>
    3. npm install electron --save<br>
    4. npm install axios --save<br>
+   5. npm install electron-packager --save-dev<br>
    5. npm start<b>
  ## Screenshots:
  ![]()
