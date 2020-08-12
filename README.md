@@ -10,6 +10,6 @@
    4. npm install axios --save<br>
    5. npm start<b>
  ## Screenshots:
- ![](https://github.com/frncs1999/SystemMonitor/blob/master/ss_01.png)
- ![](https://github.com/frncs1999/SystemMonitor/blob/master/ss_02.png)
+ ![]()
+
 
