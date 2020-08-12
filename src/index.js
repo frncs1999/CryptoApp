@@ -3,7 +3,9 @@ const path = require('path')
 const BrowserWindow = electron.remote.BrowserWindow
 const axios = require('axios');
 const ipc = electron.ipcRenderer
-
+const exit = document.getElementById('exit')
+const cryposite = document.getElementById('cryposite')
+const shell = require('electron').shell
 const notifyBtn = document.getElementById('notifyBtn')
 
 notifyBtn.addEventListener('click', function (event) {
@@ -12,7 +14,7 @@ notifyBtn.addEventListener('click', function (event) {
 		webPreferences: {
 			nodeIntegration: true
 		},
-		alwaysOnTop: true, frame: false, transparent: true, width: 400, height: 200
+		alwaysOnTop: true, frame: false, width: 350, height: 250
 	})
   win.on('close', function () { win = null })
   win.loadURL(modalPath)
@@ -49,4 +51,15 @@ var targetPrice = document.getElementById('targetPrice')
 ipc.on('targetPriceVal', function (event, arg) {
 	targetPriceVal = Number(arg);
 	targetPrice.innerHTML = '$' + targetPriceVal.toLocaleString('en')
+})
+
+
+exit.addEventListener('click', function (event) {
+	window.close()
+	app.quit()
+})
+
+
+cryposite.addEventListener('click', function (event) {
+	shell.openExternal('http://coinmarketcap.com')
 })

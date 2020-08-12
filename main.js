@@ -1,5 +1,4 @@
-const { app, BrowserWindow, Menu} = require('electron')
-const shell = require('electron').shell
+const { app, BrowserWindow} = require('electron')
 const ipc = require('electron').ipcMain
 
 let win
@@ -7,12 +6,13 @@ let win
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 400,
+    height: 400,
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true
-    }
+    },
+    frame: false
   })
 
   // and load the index.html of the app.
@@ -20,32 +20,6 @@ function createWindow () {
 
   // Open the DevTools.
   // win.webContents.openDevTools()
-
-  // for menu
-  var menu = Menu.buildFromTemplate([
-      {
-          label: 'Menu',
-          submenu: [
-              {label:'Adjust Notification Value'},
-              {
-                label:'CoinMarketCap',
-                click() { 
-                    shell.openExternal('http://coinmarketcap.com')
-                },
-                accelerator: 'CmdOrCtrl+Shift+C'
-              },
-              { type:'separator'},
-              {
-                label:'Exit', 
-                click() { 
-                    app.quit() 
-                },
-                accelerator: 'CmdOrCtrl+E'
-              }
-          ]
-      }
-  ])
-    Menu.setApplicationMenu(menu)
 
   
 }
