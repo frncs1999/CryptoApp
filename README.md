@@ -7,13 +7,13 @@
    #### Clone this repository
       git clone https://github.com/frncs1999/CryptoApp.git
    #### Go into the repository
-      cd CryptoApp<br>
+      cd CryptoApp
    #### Install dependencies
-      npm install electron --save<br>
-      npm install axios --save<br>
-      npm install electron-packager --save-dev<br>
+      npm install electron --save
+      npm install axios --save
+      npm install electron-packager --save-dev
    #### Run the app
-      npm start<b>
+      npm start
  
  ## Screenshots:
  ![](https://github.com/frncs1999/CryptoApp/blob/master/ss_01.png)
