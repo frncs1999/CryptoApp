@@ -17,6 +17,9 @@
  
  ## Screenshots:
  ![](https://github.com/frncs1999/CryptoApp/blob/master/ss_01.png)
+ --------------------------------------------------------------------
  ![](https://github.com/frncs1999/CryptoApp/blob/master/ss_02.png)
+ --------------------------------------------------------------------
  ![](https://github.com/frncs1999/CryptoApp/blob/master/ss_03.png)
+ --------------------------------------------------------------------
  ![](https://github.com/frncs1999/CryptoApp/blob/master/ss_04.png)
