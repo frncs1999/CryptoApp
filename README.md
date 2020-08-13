@@ -5,15 +5,15 @@
  #### The Crypto App, developed with ElectronJS, is capable of notifying a user whenever his/her input value surpasses the current value of Bitcoin.
  ## Setup Instruction:
    #### Clone this repository
-   git clone https://github.com/frncs1999/CryptoApp.git
+      git clone https://github.com/frncs1999/CryptoApp.git
    #### Go into the repository
-   cd CryptoApp<br>
+      cd CryptoApp<br>
    #### Install dependencies
-   npm install electron --save<br>
-   npm install axios --save<br>
-   npm install electron-packager --save-dev<br>
+      npm install electron --save<br>
+      npm install axios --save<br>
+      npm install electron-packager --save-dev<br>
    #### Run the app
-   npm start<b>
+      npm start<b>
  
  ## Screenshots:
  ![](https://github.com/frncs1999/CryptoApp/blob/master/ss_01.png)
