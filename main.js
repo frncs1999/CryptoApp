@@ -1,10 +1,13 @@
-const { app, BrowserWindow} = require('electron')
+const { app, BrowserWindow, screen} = require('electron')
 const ipc = require('electron').ipcMain
 
 let win
 
 function createWindow () {
   // Create the browser window.
+  let display = screen.getPrimaryDisplay();
+  let width = display.bounds.width;
+
   win = new BrowserWindow({
     width: 400,
     height: 400,
@@ -12,7 +15,9 @@ function createWindow () {
       nodeIntegration: true,
       enableRemoteModule: true
     },
-    frame: false
+    frame: false,
+    x: width - 1300,
+    y: 150
   })
 
   // and load the index.html of the app.

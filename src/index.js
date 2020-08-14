@@ -56,7 +56,6 @@ ipc.on('targetPriceVal', function (event, arg) {
 
 exit.addEventListener('click', function (event) {
 	window.close()
-	app.quit()
 })
 
 
