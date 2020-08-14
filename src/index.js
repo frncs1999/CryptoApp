@@ -8,9 +8,11 @@ const cryposite = document.getElementById('cryposite')
 const shell = require('electron').shell
 const notifyBtn = document.getElementById('notifyBtn')
 
+let win
+
 notifyBtn.addEventListener('click', function (event) {
   const modalPath = path.join('file://', __dirname, 'add.html')
-	let win = new BrowserWindow({
+	win = new BrowserWindow({
 		webPreferences: {
 			nodeIntegration: true
 		},
@@ -56,6 +58,7 @@ ipc.on('targetPriceVal', function (event, arg) {
 
 exit.addEventListener('click', function (event) {
 	window.close()
+	win.close()
 })
 
 
